@@ -40,10 +40,7 @@ public class GroceryController {
         return groceryService.getAllAvailableGroceryItems(userId);
     }
 
-    @PostMapping("/get-all-available-grocery-items")
-    public List<Grocery> orderMultipleGroceryItems(@RequestParam(name = "userId") Integer userId) {
-        return groceryService.getAllAvailableGroceryItems(userId);
-    }
+  
 
 
 
