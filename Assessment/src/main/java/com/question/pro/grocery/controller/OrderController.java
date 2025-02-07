@@ -15,7 +15,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @PostMapping("/get-all-available-grocery-items")
+    @PostMapping("/order-multiple-grocery-items")
     public String orderMultipleGroceryItems(@RequestParam(name = "userId") Integer userId,@RequestBody List<OrderDto> orderDtoList) {
         return orderService.orderMultipleGroceryItems(userId,orderDtoList);
     }
